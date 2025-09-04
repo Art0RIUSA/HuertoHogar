@@ -1,20 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-ul {
-    display:flex;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 20px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-li{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 150px;
+    min-height: 70vh;
+    position: relative;
 }
 
-nav{
-    background-color: rgb(35, 95, 35);
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
+.logo {
+    font-size: 25px;
+    color: tomato;
+    text-transform: uppercase;
+    font-weight: 800;
+}
 
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    color: black;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: chocolate;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: aqua;
+    padding: 20px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: antiquewhite;
+}
