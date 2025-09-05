@@ -39,10 +39,11 @@ body{
 
 .logo {
     font-size: 25px;
-    color: tomato;
+    color: #8B4513;
     text-transform: uppercase;
     font-weight: 800;
 }
+
 
 .menu .navbar ul li {
     position: relative;
@@ -53,12 +54,12 @@ body{
     font-size: 18px;
     padding: 20px;
     font-weight: 600;
-    color: black;
+    color: #2E8B57;
     display: block;
 }
 
 .menu .navbar ul li a:hover {
-    color: chocolate;
+    color: #1e501e;
 }
 
 #menu {
@@ -67,6 +68,14 @@ body{
 
 .menu-icono {
     width: 25px;
+}
+
+.login {
+    font-size: 15px;
+    padding: 20px;
+    font-weight: 600;
+    color: #2E8B57;
+    display: block;
 }
 
 .menu label {
@@ -100,5 +109,265 @@ table {
 }
 
 th, td {
-    color: antiquewhite;
+    color: rgb(247, 247, 247);
 }
+
+.borrar {
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+.bg {
+    position:  absolute;
+    width: 700px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-txt{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.header-txt h1{
+    font-size: 55px;
+    line-height: 65px;
+    color: #333333;
+    margin-bottom: 35px;
+}
+
+.header-txt{
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 45px;
+}
+
+.header-txt span {
+    color: #8B4513;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 25px;
+    background-color: #2E8B57;
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1:hover {
+    background-color: #2E8B57;
+}
+
+.header-img {
+    width: 50%;
+    text-align: right;
+}
+
+.header-img img {
+    width: 650px;
+}
+
+.productos {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 55px;
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 45px;
+}
+
+.productos-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos-1{
+    display: flex;
+    align-items: center;
+    background-color: #666666;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.productos-1 h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.productos-1 img{
+    width: 50px;
+    margin-right: 25px;
+}
+
+.info{
+    padding: 100px 0;
+    position: relative;
+    background-color: #1e501e;
+}
+
+.bg-2{
+    position: absolute;
+    width: 300px;
+    z-index: -1;
+    top: 50px;
+}
+
+.info-content{
+    display: flex;
+    align-items: center;
+
+}
+
+.info-img {
+    width: 50%;
+    text-align: left;
+
+}
+
+.info-img img{
+    width: 450px;
+    margin-left: .50px;
+}
+
+.info-txt{
+    width: 50%;
+}
+
+.products {
+    padding: 0 0 50px 0;
+    text-align: center;
+
+}
+
+.box_container{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.box {
+    border-top: 2px solid #1e501e;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4) {
+    display: inline-block;
+}
+
+.box img{
+    width: 120px;
+}
+
+.product-txt h3{
+    font-size: 20px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 25px;
+}
+
+.precio {
+    font-size: 15px;
+    color: #8B4513;
+}
+
+.btn-2{
+    background-color: #2E8B57;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 13px 35px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-2:hover {
+    background-color: #1e501e;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: #2E8B57;
+    color: white;
+    border-radius: 10px;
+}
+.btn-3:hover {
+    background-color: #1e501e;
+}
+
+.app {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.app-txt{
+    width: 50%;
+}
+
+.descarga {
+    display: flex;
+}
+
+.descarga img{
+    width: 150px;
+}
+
+.app-img{
+    width: 50%;
+    text-align: center;
+}
+
+.app-img img{
+    width: 450px;
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: #2E8B57;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
