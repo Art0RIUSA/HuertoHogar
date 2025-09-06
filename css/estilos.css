@@ -10,6 +10,8 @@
     list-style: none;
 }
 
+
+
 body{
     font-family: "Montserrat", sans-serif;
 }
@@ -48,6 +50,7 @@ body{
 .menu .navbar ul li {
     position: relative;
     float: left;
+    
 }
 
 .menu .navbar ul li a {
@@ -60,10 +63,12 @@ body{
 
 .menu .navbar ul li a:hover {
     color: #1e501e;
+    
 }
 
 #menu {
     display: none;
+    
 }
 
 .menu-icono {
@@ -98,7 +103,7 @@ body{
     backdrop-filter: blur(10px);
     top: 100%;
     z-index: 1;
-    background-color: aqua;
+    background-color: gray;
     padding: 20px;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -289,6 +294,7 @@ p {
 
 .box img{
     width: 120px;
+    height: 120px;
 }
 
 .product-txt h3{
