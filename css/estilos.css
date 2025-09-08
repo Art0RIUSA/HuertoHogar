@@ -211,7 +211,7 @@ p {
 .productos-1{
     display: flex;
     align-items: center;
-    background-color: #666666;
+    background-color: #1e501e;
     padding: 10px;
     border-radius: 15px;
     width: 200px;
@@ -377,3 +377,37 @@ p {
 
 }
 
+.products-layout {
+  display: table-row-group;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+}
+
+.sidebar {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #2E8B57;
+}
+
+.filtro {
+  margin-bottom: 15px;
+}
+
+.filtro h4 {
+  margin-bottom: 5px;
+  color: #8B4513;
+}
+
+.login2{
+
+    align-items: center;
+    display: flex;
+    padding: 35px;
+    
+}
