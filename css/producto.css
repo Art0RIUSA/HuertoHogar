@@ -1,14 +1,25 @@
-header div div{
+.menuprincipal{
     border: 3px solid green;
+    padding: 10px;
+    border-radius: 10px;
 }
 #productos{
     background-color: lightgreen;
     margin-top: 40px;
+    padding: 20px;
+    text-align: center;
 }
 
 #productos img{
     margin: 10px;
     width: 200px;
-    height: 100px;
+    height: 150px;
     border: solid 3px black;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
+
+#productos img:hover {
+    transform: scale(1.05);
+}
+

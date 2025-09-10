@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-    <section>
-        <header>
-            <div class="menuprincipal">
-                <nav>
-                    <ul>
-                        <img src="img/logo.png" width="90px" height="80px" alt="">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="blog.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <header>
+        <div class="menuprincipal">
+            <nav>
+                <ul>
+                    <img src="img/logo.png" width="90px" height="80px" alt="Logo">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Nosotros</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                    <li><a href="#"><img src="img/carro.png" width="30" height="20" alt="Carrito"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section id="contacto">
+      <div class="contacto-container">
+        <h1>Contacto</h1>
+        <p>Escríbenos y nos pondremos en contacto contigo.</p>
+
+        <form action="#" method="post" class="form-contacto">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Huerto Hogar | Todos los derechos reservados</p>
+  </footer>
+ -->
+
 </body>
 </html>
