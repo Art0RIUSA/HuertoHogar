@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+        <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-    <main>
-        <section>
+    <header class="header">
             <div class="menu container">
                     <a href="index.html"><img src="img/logo.png" width="90px" alt=""></a>
                     <a href="#" class="logo">Huerto Hogar</a>
@@ -52,29 +50,55 @@
                             <a href="#">Registrarse</a>
                         </li>
                     </div>
-            </div>
-        </section>
+                    
+            </div>   
+
     </header>
-    <header>
-        <section id="nosotros">
-            <div>
-                <div>
-                    <h1>Quienes Somos</h1>
-                </div>
-                <div>
-                    <p>
-                         Huerto Hogar es Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vero nobis vel laboriosam neque ullam placeat consequuntur, impedit non aspernatur eius, ex mollitia eveniet facere eaque doloremque? Sapiente, et obcaecati.
-                    </p>
-                </div>
-            </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><img src="img/nosotros xd.jpg" width="700px" height="700px" alt=""></li>
-                    </ul>
-                </nav>
+    <main>
+        <section class="login2">
+            <form action="" method="post" onsubmit="return validarTodo()">
+                <table border="1">
+                    <tr>
+                        <td>Login Usuario</td>
+                    </tr>
+                    <tr>
+                        <td>Correo:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="txtEmail" id="txtEmail" required maxlength="100" placeholder="ingrese correo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" name="txtPass" id="txtPass" required maxlength="10" minlength="4" placeholder="ingrese password" pattern="[0-9A-Za-z]{4}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Inicio sesion">
+                            <input type="reset" value="Limpiar">
+                            <input type="button" value="Validar" onclick="validarRut()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rut:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="txtRut" id="txtRut">
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </section>
-    </header>
     </main>
+
+    <script  src="js/funciones.js">
+
+    </script>
 </body>
 </html>
