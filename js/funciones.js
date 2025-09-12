@@ -91,3 +91,4 @@ function vaciarCarrito(){
     }
     return false;
 }
+

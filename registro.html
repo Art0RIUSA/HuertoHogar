@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/estilosLogin.css">
 </head>
 <body>
-     <header class="header">
+    <header class="header">
             <div class="menu container">
                     <a href="index.html"><img src="img/logo.png" width="90px" alt=""></a>
                     <a href="#" class="logo">Huerto Hogar</a>
@@ -45,24 +45,30 @@
                         </ul>
                     </div>
                     <div>
-                        <li class="login"><a href="#">Iniciar Sesion</a>
+                        <li class="login"><a href="login.html">Iniciar Sesion</a>
                             <a href="">|</a>
                             <a href="#">Registrarse</a>
                         </li>
                     </div>
                     
             </div>   
-
+    
     </header>
     <main>
         <div class="Empresa">
             <img src="img/logo.png" alt="">
         </div>    
-        <h2>Iniciar Sesion</h2>
+        <h2>Registro Usuario</h2>
         <div class="contenedorTabla">
             <section class="login2">
-                <form onsubmit="validarUsuario(); return false;">
+                <form onsubmit="agregarUsuario(); return false;">
                     <table border="1">
+                        <tr>
+                            <td>Nombre Completo:</td>
+                        </tr>
+                        <td>
+                            <input type="text" name="nombre" id="nombre" placeholder="ingrese nombre">
+                        </td>
                         <tr>
                             <td>Correo:</td>
                         </tr>
@@ -80,8 +86,17 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Confirmar Contraseña:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="confirmar" id="confirmar" placeholder="Confirme contraseña"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
                             <td>
-                                <button type="submit">Iniciar sesión</button>
+                                <button type="submit">Crear Cuenta</button>
                                 <button type="reset">Limpiar</button>
                             </td>
                         </tr>
@@ -89,7 +104,7 @@
                 </form>
 
 
-                <p id="mensaje"></p>
+                <p id="mensaje2"></p>
             </section>
         </div>
     </main>
@@ -133,7 +148,8 @@
             </div>
         </div>
     </footer>
-    <script  src="js/login.js">
+    <script src="js/login.js"></script>
+    <script src="js/usuario.js">
     </script>
 </body>
 </html>

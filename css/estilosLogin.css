@@ -2,6 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
+
+
+.Empresa{
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+}
+
+.contenedorTabla{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.login2{
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+th, td{
+    color: black;
+    padding: 10px;
+    border-style: none;
+    border-color: #1e501e;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -24,7 +55,7 @@ body{
 .header {
     display: flex;
     align-items: center;
-    min-height: 70vh;
+    min-height: 20vh;
     position: relative;
 }
 
@@ -113,10 +144,6 @@ table {
     width: 100%;
 }
 
-th, td {
-    color: rgb(247, 247, 247);
-}
-
 .borrar {
     background-color: tomato;
     border-radius: 50%;
@@ -191,10 +218,12 @@ th, td {
 }
 
 h2 {
+    display: flex;
+    height: 100px;
     font-size: 45px;
-    line-height: 55px;
     color: #8B4513;
-    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
