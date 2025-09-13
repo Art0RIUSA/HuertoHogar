@@ -54,8 +54,16 @@
   cursor: pointer;
   font-size: 1.1rem;
   transition: background-color 0.3s;
+  transition: transform 0.2s ease;
 }
 
 .form-contacto button:hover {
   background-color: #45a049;
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .contacto-container {
+    padding: 20px;
+  }
 }

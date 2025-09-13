@@ -6,24 +6,28 @@
     <title>Huerto Hogar</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+<script src="js/funciones.js"></script>
 <body>
     <section>
-        <header>
-            <div class="menuprincipal">
-                <div>
-                    <img src="img/logo.png" alt="">
-                    </label>
-                </div>
-                <nav>
-                    <ul>
-                        <li><img src="img/logo.png" width="90px" height="80px" alt=""></li>
-                        <li><a href="index.html">Inicio</li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="blog.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="menuprincipal">
+        <div class="menu container">
+            <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Huerto Hogar" width="80">
+            </a>
+
+            <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" id="ver-carrito">Carrito (<span id="contador-carrito">0</span>)</a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+            </div class="submenu">
+            <button id="ver-carrito">Carrito</button>
             <div class="header-content container">
                 <div class="header-txt">
                     <h1> <span>Bienvenido</span> disfruta de nuestros productos</h1>
@@ -36,7 +40,6 @@
                     </p>
                 </div>
             </div>
-        </header>
     </section>
 
     <main class="products container">
@@ -44,7 +47,7 @@
 
         <div class="box_container" id="lista-1">
             <div class="box">
-                <img src="img/manzana.jpg" width="40px" alt="">
+                <img src="img/manzana.jpg" width="40px" alt="###">
                 <div class="products-txt">
                     <h3>Manzanas Fuji</h3>
                     <p>Crujientes y dulces</p>
@@ -53,7 +56,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="img/platano.jpg" width="40px" alt="">
+                <img src="img/platano.jpg" width="40px" alt="###">
                 <div class="products-txt">
                     <h3>Plátano Cavendish</h3>
                     <p>calidad premium</p>
@@ -62,7 +65,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="img/zanahoria.jpg" width="40px" alt="">
+                <img src="img/zanahoria.jpg" width="40px" alt="###">
                 <div class="products-txt">
                     <h3>Zanahorias Orgánicas</h3>
                     <p>Fuente de vitamina A</p>
