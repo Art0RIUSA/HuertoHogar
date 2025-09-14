@@ -6,6 +6,9 @@ function agregarUsuario(){
 
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))||[];
 
+
+
+
     let existe = usuarios.find(u => u.email === email);
     if(existe){
         document.getElementById("mensaje").innerText="El correo ya esta en uso"

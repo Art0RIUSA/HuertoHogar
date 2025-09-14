@@ -94,10 +94,13 @@ function mostrarCarrito(){
     document.getElementById("total").textContent = "$" + total.toFixed(0);
 
     const contadorCarrito = document.getElementById("contador-carrito");
+
     if(contadorCarrito){ 
         contadorCarrito.textContent = totalProductos;
     }
 }
+
+
 
 function eliminarElemento(e){
     e.preventDefault();

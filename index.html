@@ -28,7 +28,6 @@
                         <ul>
                             <li class="submenu">
                                 <img src="img/carro.png" width="40px" id="img-carrito" alt="carrito" >
-                                <span id="contador-carrito">0</span>
                                 <div id="carrito">
                                     <table id="lista-carrito">
                                         <thead>
@@ -41,6 +40,7 @@
                                         <tbody></tbody>
                                     </table>
                                     <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                                    <a href="carrito.html"class="btn-3" id="DetalleCarrito" onclick="ir()">Detalle carrito</a>
                                 </div>
                             </li>
                         </ul>
@@ -274,7 +274,9 @@
 
 
     <script src="js/funciones.js">
-
+        function ir(){
+            window.location.href="DetalleCarrito"
+        }
     </script>
 </body>
 </html>

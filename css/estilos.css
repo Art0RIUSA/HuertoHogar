@@ -102,8 +102,8 @@ body{
     right: 0;
     backdrop-filter: blur(10px);
     top: 100%;
-    z-index: 1;
-    background-color: rgb(143, 141, 141);
+    z-index: 1000;
+    background-color: rgb(112, 109, 109);
     padding: 60px;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -228,6 +228,7 @@ p {
 .productos-1 img{
     width: 50px;
     margin-right: 25px;
+
 }
 
 .info{
@@ -275,6 +276,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 20px;
+
 }
 
 .box {

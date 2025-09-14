@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/productos.css">
 </head>
 <body>
     <header>
@@ -42,14 +41,15 @@
                                         <tbody></tbody>
                                     </table>
                                     <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                                    <a href="carrito.html"class="btn-3" id="DetalleCarrito" onclick="ir()">Detalle carrito</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <li class="login"><a href="#">Iniciar Sesion</a>
+                        <li class="login"><a href="login.html">Iniciar Sesion</a>
                             <a href="">|</a>
-                            <a href="#">Registrarse</a>
+                            <a href="registro.html">Registrarse</a>
                         </li>
                 </div>
                     
@@ -60,35 +60,21 @@
         <br>
         <br>
         <br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br><br>
+        <br>
+        <br>
         <h2>Productos</h2>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+ 
 
-        
-        <div class="products-layout">
-            
-            <aside class="barra">
-            <h3>Filtrar por</h3>
-
-            <div class="filtro">
-                <h4>Categoría</h4>
-                <label><input type="checkbox" value="Frutas"> Frutas frescas</label><br>
-                <label><input type="checkbox" value="Verduras"> Verduras orgánicas</label><br>
-                <label><input type="checkbox" value="Lácteos"> Productos lácteos</label><br>
-                <label><input type="checkbox" value="Orgánicos"> Productos orgánicos</label>
-            </div>
-
-            <div class="filtro">
-                <h4>Precio</h4>
-                <label><input type="radio" name="precio" value="0-2000"> Menos de $2.000</label><br>
-                <label><input type="radio" name="precio" value="2000-5000"> $2.000 - $5.000</label><br>
-                <label><input type="radio" name="precio" value="5000-10000"> $5.000 - $10.000</label><br>
-                <label><input type="radio" name="precio" value="10000+"> Más de $10.000</label>
-            </div>
-
-            <button id="aplicarFiltros" class="btn-3">Aplicar filtros</button>
-            <button id="limpiarFiltros" class="btn-3">Limpiar</button>
-            </aside>
-
-        </div>
 
         <div class="box_container" id="lista-1">
             <div class="box">
@@ -96,7 +82,7 @@
                 <div class="products-txt">
                     <h3>Manzanas Fuji</h3>
                     <p>Crujientes y dulces</p>
-                    <p class="precio">$1.200 / kg</p>
+                    <p class="precio">$1200 / kg</p>
                     <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
                 </div>
             </div>
@@ -123,7 +109,7 @@
                 <div class="products-txt">
                     <h3>Miel Orgánica</h3>
                     <p>Pura y natural</p>
-                    <p class="precio">$5.000 / 500g</p>
+                    <p class="precio">$5000 / 500g</p>
                     <a href="#" class="agregar-carrito btn-3" data-id="4">agregar al carrito</a>
                 </div>
             </div>
@@ -213,11 +199,6 @@
     <script src="js/verduras.js"></script>
     <script src="js/carrito.js"></script>
     <script>
-        var verduras=[
-            new Verdura(1,"Manzanas Fuji",1.200,"img/manzana.jpg"),
-            new Verdura(2,"Plátano Cavendish",800,"img/platano.jpg"),
-            new Verdura(3,"Zanahorias Orgánicas",900,"img/zanahoria.jpg"),
-        ]
 
     </script>
 
