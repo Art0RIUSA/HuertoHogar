@@ -1,10 +1,8 @@
-
-
-export function agregarUsuario(){
-    let nombre = document.getElementById("nombre").Value.trim();
-    let email = document.getElementById("txtEmail").Value.trim();
-    let contraseña = document.getElementById("txtPass").Value.trim();
-    let concontra= document.getElementById("confirmar").Value.trim();
+function agregarUsuario(){
+    let nombre = document.getElementById("nombre").value.trim();
+    let email = document.getElementById("txtEmail").value.trim();
+    let contraseña = document.getElementById("txtPass").value.trim();
+    let concontra= document.getElementById("confirmar").value.trim();
 
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))||[];
 

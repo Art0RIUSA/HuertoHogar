@@ -1,18 +1,21 @@
-import { agregarUsuario } from "./usuario";
-
 
 function validarUsuario(){
-    var correo = document.getElementById("txtEmail").value;
-    var contraseña = document.getElementById("txtPass").value;
+    var correo = document.getElementById("txtEmail").value.trim();
+    var contraseña = document.getElementById("txtPass").value.trim();
     console.log("correo:"+correo+"Pass:"+contraseña);
 
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     //if(correo=="abc@gmail.com"&&contraseña=="1234"){
-    if(correo==usuarios.find(u => u.email)&& contraseña== usuarios.find(u => u.contraseña)){
-      alert("BIENVENIDO")
-      window.location.href="index.html"
+    let usuario = usuarios.find(u => u.email === correo && u.contraseña === contraseña);
 
+    if(usuario){
+        alert("Bienvenido" + usuario.nombre);
+        localStorage.setItem("sesion", JSON.stringify(usuario));
+        window.location.href = "index.html";
     }else{
-        alert("ERROR")
+        alert("Correo o contraseña incorrectos");
+        console.log(JSON.parse(localStorage.getItem("usuarios")));
+
     }
 }
 
