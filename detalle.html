@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section id="detalle-producto" class="container">
+    <div class="detalle-container">
+      <div class="detalle-img">
+        <img id="detalle-img" alt="Imagen del producto">
+      </div>
+      <div class="detalle-info">
+        <h2 id="detalle-nombre"></h2>
+        <p id="detalle-descripcion"></p>
+        <p id="detalle-precio" class="precio"></p>
+        <button class="btn-3 agregar-carrito" id="agregar-detalle">Añadir al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/funciones.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    const productos = {
+      FR001: {
+        nombre: "Manzanas Fuji",
+        descripcion: "Crujientes y dulces, cultivadas en el Valle del Maule. Ricas en fibra y antioxidantes.",
+        precio: "$1.200 / kg",
+        imagen: "img/manzana.jpg"
+      },
+      FR003: {
+        nombre: "Plátanos Cavendish",
+        descripcion: "Maduros y energéticos, ideales para batidos y postres.",
+        precio: "$800 / kg",
+        imagen: "img/platano.jpg"
+      },
+      VR001: {
+        nombre: "Zanahorias Orgánicas",
+        descripcion: "Cultivadas sin pesticidas, fuente natural de vitamina A.",
+        precio: "$900 / kg",
+        imagen: "img/zanahoria.jpg"
+      },
+      PO001: {
+        nombre: "Miel Orgánica",
+        descripcion: "Recolectada por apicultores locales, sin aditivos ni conservantes.",
+        precio: "$5.000 / 500g",
+        imagen: "img/miel-1.jpg"
+      }
+    };
+
+    const producto = productos[id];
+
+    if (producto) {
+      document.getElementById('detalle-nombre').textContent = producto.nombre;
+      document.getElementById('detalle-descripcion').textContent = producto.descripcion;
+      document.getElementById('detalle-precio').textContent = producto.precio;
+      document.getElementById('detalle-img').src = producto.imagen;
+
+      document.getElementById('agregar-detalle').addEventListener('click', () => {
+        let carrito = JSON.parse(localStorage.getItem('carritoHuerto')) || [];
+        const existente = carrito.find(p => p.id === id);
+        if (existente) {
+          existente.cantidad += 1;
+        } else {
+          carrito.push({ id, cantidad: 1 });
+        }
+        localStorage.setItem('carritoHuerto', JSON.stringify(carrito));
+        alert('Producto añadido al carrito');
+      });
+    } else {
+      document.getElementById('detalle-producto').innerHTML = "<p>Producto no encontrado.</p>";
+    }
+  </script>
+
+    <script type="module" src="js/detalle.js"></script>
+</body>
+</html>

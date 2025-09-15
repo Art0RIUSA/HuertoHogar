@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Huerto Hogar</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+
     <header class="header">
             <div class="menu container">
                     <a href="index.html"><img src="img/logo.png" width="90px" alt=""></a>
@@ -99,6 +100,65 @@
                 <a href="productos.html"><img src="img/miel-1.jpg" width="40px" alt=""></a>
                 <h3>Productos Orgánicos</h3>
             </div>
+
+    <section>
+        <header class="menuprincipal">
+        <div class="menu container">
+            <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Huerto Hogar" width="150">
+            </a>
+            <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html" id="ver-carrito">Carrito (<span id="contador-carrito">0</span>)</a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+        
+        <div class="auth-links">
+            <a href="login.html" class="btn-login">Iniciar sesión</a>
+            <a href="registro.html" class="btn-register">Registrarse</a>
+            </div>
+        </div>
+        </header>
+
+        <section class="hero">
+        <div class="hero-content container">
+            <h1><span>Bienvenido</span> a Huerto Hogar</h1>
+            <p>Productos frescos, orgánicos y locales directo a tu mesa. Conecta con la tierra, apoya a productores locales y transforma tu alimentación.</p>
+            <a href="producto.html" class="btn-hero">Ver productos</a>
+        </div>
+        </section>
+    </section>
+        <main class="products container">
+            <h2>Productos</h2>
+            <div class="box_container" id="lista-1">
+
+                <div class="box">
+                <img src="img/manzana.jpg" width="40px" alt="Manzanas Fuji">
+                <div class="products-txt">
+                    <h3>Manzanas Fuji</h3>
+                    <p>Crujientes y dulces</p>
+                    <p class="precio">$1.200 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+                </div>
+
+
+                <div class="box">
+                <img src="img/naranja.jpg" width="40px" alt="Naranjas Valencia">
+                <div class="products-txt">
+                    <h3>Naranjas Valencia</h3>
+                    <p>Jugosas y ricas en vitamina C</p>
+                    <p class="precio">$1.000 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+                </div>
 
 
             <div class="productos-1">
@@ -209,6 +269,80 @@
 
         </div>
 
+                <div class="box">
+                <img src="img/platano.jpg" width="40px" alt="Plátanos Cavendish">
+                <div class="products-txt">
+                    <h3>Plátanos Cavendish</h3>
+                    <p>Plátanos maduros y dulces</p>
+                    <p class="precio">$800 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+                </div>
+
+                <div class="box">
+                <img src="img/zanahoria.jpg" width="40px" alt="Zanahorias Orgánicas">
+                <div class="products-txt">
+                    <h3>Zanahorias Orgánicas</h3>
+                    <p>Excelente fuente de vitamina A</p>
+                    <p class="precio">$900 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+                </div>
+
+                <div class="box">
+                <img src="img/espinacas.jpg" width="40px" alt="Espinacas Frescas">
+                <div class="products-txt">
+                    <h3>Espinacas Frescas</h3>
+                    <p>Hojas verdes ricas en hierro</p>
+                    <p class="precio">$700 / 500 gr</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+                </div>
+
+                <div class="box">
+                <img src="img/pimientos.jpg" width="40px" alt="Pimientos Tricolores">
+                <div class="products-txt">
+                    <h3>Pimientos Tricolores</h3>
+                    <p>Ricos en antioxidantes y vitaminas</p>
+                    <p class="precio">$1.500 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                </div>
+                </div>
+
+                <div class="box">
+                <img src="img/miel-1.jpg" width="40px" alt="Miel Orgánica">
+                <div class="products-txt">
+                    <h3>Miel Orgánica</h3>
+                    <p>Pura, natural y sin aditivos</p>
+                    <p class="precio">$5.000 / 500 gr</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+                </div>
+
+                <div class="box">
+                <img src="img/quinua-organica.jpg" width="40px" alt="Quinua Orgánica">
+                <div class="products-txt">
+                    <h3>Quinua Orgánica</h3>
+                    <p>Alto contenido proteico</p>
+                    <p class="precio">$2.000 / 500 gr</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+                </div>
+
+
+                <div class="box">
+                <img src="img/leche.jpg" width="40px" alt="Leche Entera">
+                <div class="products-txt">
+                    <h3>Leche Entera</h3>
+                    <p>Fresca y de origen local</p>
+                    <p class="precio">$1.200 / litro</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                </div>
+                </div>
+                <div class="btn-2" id="load-more">Cargar Más</div>
+            </div>
+        </main>
+
 
     </main>
 
@@ -278,5 +412,22 @@
             window.location.href="DetalleCarrito"
         }
     </script>
+
+    <footer class="footer container">
+    <div class="breadcrumb">
+      <p>Huerto Hogar > Frutas > Orgánicas</p>
+    </div>
+    <div class="newsletter">
+      <h3>Suscríbete a nuestro boletín</h3>
+      <form id="form-newsletter">
+        <input type="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Suscribirse</button>
+      </form>
+    </div>
+  </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/index.js"></script>
+
 </body>
 </html>
