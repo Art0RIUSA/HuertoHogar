@@ -1,4 +1,136 @@
 <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <header class="header" >
+            <div class="menu container">
+                    <a href="index.html"><img src="img/logo.png" width="90px" alt=""></a>
+                    <a href="#" class="logo">Huerto Hogar</a>
+                    <input type="checkbox" name="" id="menu">
+                    <label for="menu">
+                        <img src="img/logo.png" width="70px" class="menu-icono" alt="">
+                    </label>
+               
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul>
+                            <li class="submenu">
+                                <img src="img/carro.png" width="40px" id="img-carrito" alt="carrito">
+                                <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <li class="login"><a href="login.html">Iniciar Sesion</a>
+                            <a href="">|</a>
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </div>
+                    
+            </div>   
+
+    </header>
+    <main>
+
+                
+        <h1 style="text-align:center;">Detalle del Carrito</h1>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+                <th>Acción</th>
+            </tr>
+            </thead>
+            <tbody id="detalle-carrito"></tbody>
+        </table>
+
+        <div class="total">
+            Subtotal: <span id="subtotal">0</span><br>
+            IVA (19%): <span id="iva">0</span><br>
+            Total: <span id="total">0</span><br>
+            <button class="btn" id="vaciar-carrito">Vaciar Carrito</button>
+        </div>
+
+        <script src="detalleCarrito.js"></script>
+
+
+    </main>
+
+     <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Misión y visión</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                    <li><a href="#">Equipo</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><a href="#">Formulario de contacto</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Vision</h3>
+                <ul>
+                    <li><a href="#">Calidad garantizada</a></li>
+                    <li><a href="#">Apoyo a agricultores</a></li>
+                    <li><a href="#">Estilo de vida saludable</a></li>
+                    <li><a href="#">Expansión nacional</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Descarga nuestra app</h3>
+                <ul>
+                    <div class="descarga">
+                        <img src="img/app store.png" width="40px" alt="">
+                        <img src="img/googleplay.png" width="40px" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/carrito.js">
+
+
+    </script>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -52,6 +184,7 @@
     </footer>
 
     <script type="module" src="js/carrito.js"></script>
+
 
 </body>
 </html>

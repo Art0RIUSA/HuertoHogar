@@ -7,6 +7,100 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+
+    <header class="header">
+            <div class="menu container">
+                    <a href="index.html"><img src="img/logo.png" width="90px" alt=""></a>
+                    <a href="#" class="logo">Huerto Hogar</a>
+                    <input type="checkbox" name="" id="menu">
+                    <label for="menu">
+                        <img src="img/logo.png" width="70px" class="menu-icono" alt="">
+                    </label>
+               
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul>
+                            <li class="submenu">
+                                <img src="img/carro.png" width="40px" id="img-carrito" alt="carrito" >
+                                <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                                    <a href="carrito.html"class="btn-3" id="DetalleCarrito" onclick="ir()">Detalle carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <li class="login"><a href="login.html">Iniciar Sesion</a>
+                            <a href="">|</a>
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                    </div>
+                    
+            </div>   
+            
+            
+        <div class="header-content container">
+            
+            <div class="header-txt">
+
+                <h1> <span>Bienvenido</span> a HuertoHogar</h1>
+                <p>
+                    Llevamos la frescura del campo directamente a tu mesa. 
+                    Descubre nuestra selección de frutas, verduras, lácteos y productos orgánicos, 
+                    cultivados de forma sostenible en distintas regiones de Chile.
+                </p>
+                <br>
+                <a href="productos.html" class="btn-1">Explorar productos</a>
+            </div>
+            <div class="header-img">
+                    <img src="img/veredurasyfrutas.webp" width="80px" alt="">
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section class="productos container">
+        <h2>Categorias</h2>
+        <p>
+            Explora nuestra variedad de productos frescos y orgánicos
+        </p>
+        <div class="productos-content">
+
+            <div class="productos-1">
+                <a href="productos.html"><img src="img/platano.jpg" width="40px" alt=""></a>
+                <h3>Frutas Frescas</h3>
+            </div>
+
+            <div class="productos-1">
+                <a href="productos.html"><img src="img/zanahoria.jpg" width="40px" alt=""></a>
+                <h3>Verduras Orgánicas</h3>
+            </div>
+
+
+            <div class="productos-1">
+                <a href="productos.html"><img src="img/miel-1.jpg" width="40px" alt=""></a>
+                <h3>Productos Orgánicos</h3>
+            </div>
+
     <section>
         <header class="menuprincipal">
         <div class="menu container">
@@ -55,6 +149,7 @@
                 </div>
                 </div>
 
+
                 <div class="box">
                 <img src="img/naranja.jpg" width="40px" alt="Naranjas Valencia">
                 <div class="products-txt">
@@ -64,6 +159,115 @@
                     <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
                 </div>
                 </div>
+
+
+            <div class="productos-1">
+                <a href="productos.html"><img src="img/queso1.png"  width="40px" alt=""></a>
+                <h3>Productos Lácteos</h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="info">
+        <img class="bg-2" src="" width="40px" alt="">
+        <div class="info-content container">
+            <div class="info-img">
+                <img src="img/tomates2.jpg" width="40px" alt="">
+            </div>
+            <div class="info-txt">
+                <h2>La mejor calidad del campo a tu mesa</h2>  
+                <p>
+                     Nuestra misión es ofrecer productos frescos, naturales y de origen local. 
+                    Apoyamos a agricultores chilenos y fomentamos la alimentación saludable 
+                    y sostenible en todos los hogares.
+                </p>  
+                <a href="#" class="btn-1">Conócenos</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="products container">
+        <h2>Productos</h2>
+
+        <div class="box_container" id="lista-1">
+            <div class="box">
+                <img src="img/manzana.jpg" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>Manzanas Fuji</h3>
+                    <p>Crujientes y dulces</p>
+                    <p class="precio">$1200 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/platano.jpg" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>Plátano Cavendish</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$800 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/zanahoria.jpg" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>Zanahorias Orgánicas</h3>
+                    <p>Fuente de vitamina A</p>
+                    <p class="precio">$900 / Kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/miel-1.jpg" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>Miel Orgánica</h3>
+                    <p>Pura y natural</p>
+                    <p class="precio">$5000 / 500g</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>descripcion producto</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>descripcion producto</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>descripcion producto</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>descripcion producto</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="btn-2" id="load-more">
+                Cargar Mas
+            </div>
+
+        </div>
 
                 <div class="box">
                 <img src="img/platano.jpg" width="40px" alt="Plátanos Cavendish">
@@ -125,6 +329,7 @@
                 </div>
                 </div>
 
+
                 <div class="box">
                 <img src="img/leche.jpg" width="40px" alt="Leche Entera">
                 <div class="products-txt">
@@ -137,6 +342,76 @@
                 <div class="btn-2" id="load-more">Cargar Más</div>
             </div>
         </main>
+
+
+    </main>
+
+    <section class="app container">
+        <div class="app-txt">
+            <h2>Descarga nuestra app descubre ofertas</h2>
+            <p>
+                Con HuertoHogar App puedes comprar tus productos favoritos, 
+                recibir notificaciones de ofertas exclusivas y hacer seguimiento 
+                de tus pedidos en tiempo real.
+            </p>
+            <div class="descarga">
+                <img src="img/app store.png" width="40px" alt="">
+                <img src="img/googleplay.png" width="40px" alt="">
+            </div>
+        </div>
+        <div class="app-img">
+            <img src="img/tomate.jpg" width="40px" alt="">
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Misión y visión</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                    <li><a href="#">Equipo</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><a href="#">Formulario de contacto</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Vision</h3>
+                <ul>
+                    <li><a href="#">Calidad garantizada</a></li>
+                    <li><a href="#">Apoyo a agricultores</a></li>
+                    <li><a href="#">Estilo de vida saludable</a></li>
+                    <li><a href="#">Expansión nacional</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Descarga nuestra app</h3>
+                <ul>
+                    <div class="descarga">
+                        <img src="img/app store.png" width="40px" alt="">
+                        <img src="img/googleplay.png" width="40px" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/funciones.js">
+        function ir(){
+            window.location.href="DetalleCarrito"
+        }
+    </script>
 
     <footer class="footer container">
     <div class="breadcrumb">
@@ -153,5 +428,6 @@
 
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/index.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');  
+body {
+  display: flex;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #f5f5f5;
+}
+
+.sidebar {
+  width: 220px;
+  background: #2E8B57;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.activo {
+  background: #6a3410;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #8B4513;
+  margin-bottom: 15px;
+}
+
+
+.formulario {
+  display: grid;
+  gap: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #8B4513;
+  outline: none;
+}
+
+
+.btn {
+  background: #8B4513;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #6a3410;
+}
+
+

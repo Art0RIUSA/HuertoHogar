@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload="CargarProductos()">
+    <header>
+        <section>
+             <div class="menu container">
+                    <a href="index.html"><img src="img/logo.png" width="90px" alt=""></a>
+                    <a href="#" class="logo">Huerto Hogar</a>
+                    <input type="checkbox" name="" id="menu">
+                    <label for="menu">
+                        <img src="img/logo.png" width="70px" class="menu-icono" alt="">
+                    </label>
+               
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul>
+                            <li class="submenu">
+                                <img src="img/carro.png" width="40px" id="img-carrito" alt="carrito">
+                                <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                                    <a href="carrito.html"class="btn-3" id="DetalleCarrito" onclick="ir()">Detalle carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <li class="login"><a href="login.html">Iniciar Sesion</a>
+                            <a href="">|</a>
+                            <a href="registro.html">Registrarse</a>
+                        </li>
+                </div>
+                    
+            </div>   
+        </section>
+    </header>
+    <main class="products container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <h2>Productos</h2>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+ 
+
+
+        <div class="box_container" id="lista-1">
+            <div class="box">
+                <img src="img/manzana.jpg" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>Manzanas Fuji</h3>
+                    <p>Crujientes y dulces</p>
+                    <p class="precio">$1200 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/platano.jpg" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>Plátano Cavendish</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$800 / kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/zanahoria.jpg" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>Zanahorias Orgánicas</h3>
+                    <p>Fuente de vitamina A</p>
+                    <p class="precio">$900 / Kg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/miel-1.jpg" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>Miel Orgánica</h3>
+                    <p>Pura y natural</p>
+                    <p class="precio">$5000 </p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>descripcion producto</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>descripcion producto</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>descripcion producto</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">agregar al carrito</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/logo.png" width="40px" alt="">
+                <div class="products-txt">
+                    <h3>descripcion producto</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">agregar al carrito</a>
+                </div>
+            </div>
+            <div class="btn-2" id="load-more">
+                Cargar Mas
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+                <div class="footer-content container">
+            <div class="link">
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Misión y visión</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                    <li><a href="#">Equipo</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><a href="#">Formulario de contacto</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Vision</h3>
+                <ul>
+                    <li><a href="#">Calidad garantizada</a></li>
+                    <li><a href="#">Apoyo a agricultores</a></li>
+                    <li><a href="#">Estilo de vida saludable</a></li>
+                    <li><a href="#">Expansión nacional</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Descarga nuestra app</h3>
+                <ul>
+                    <div class="descarga">
+                        <img src="img/app store.png" width="40px" alt="">
+                        <img src="img/googleplay.png" width="40px" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/funciones.js"></script>
+    <script src="js/carrito.js"></script>
+    <script>
+        function CargarProductos(){
+            const cajas = document.querySelectorAll(".box_container .box");
+            let productos = [];
+
+            cajas.forEach(caja => {
+                const nombre = caja.querySelector("h3")?.textContent.trim();
+                const descripcion = caja.querySelector("p")?.textContent.trim();
+                const precioTexto = caja.querySelector(".precio")?.textContent.trim();
+                const img = caja.querySelector("img")?.src;
+                const id = caja.querySelector("a")?.getAttribute("data-id");
+
+                // Limpiar el precio (quitar símbolos y letras)
+                let precio = parseInt(precioTexto.replace(/[^0-9]/g, ""));
+                if (isNaN(precio)) precio = 0;
+
+                productos.push({ id, nombre, descripcion, precio, imagen: img });
+            });
+
+            // Guardar en localStorage
+            localStorage.setItem("productos", JSON.stringify(productos));
+
+            console.log("Productos cargados en localStorage ✅", productos);
+        }
+
+        // Ejecutar cuando cargue toda la página
+        window.addEventListener("load", CargarProductos);
+</script>
+
+
+</body>
+</html>
