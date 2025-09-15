@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/producto.css">
 </head>
 <body>
      <header class="menuprincipal">
@@ -27,38 +26,6 @@
         </header>
     <section id="productos" class="container">
         <h2>Productos Destacados</h2>
-            <div class="productos-grid">
-                <div class="producto-card">
-                    <img src="img/manzana.jpg" alt="Manzanas Fuji del Valle del Maule">
-                    <h3>Mazanzana Fuji</h3>
-                    <p>Crujientes y dulces, cultivadas en el Valle del Maule.</p>
-                    <p class="precio">$1.200 / kg</p>
-                    <button class="btn-3 agregar-carrito" data-id="FR001">Añadir al carrito</button>
-                </div>
-                <div class="producto-card">
-                    <img src="img/platano.jpg" alt="Plátanos Cavendish maduros">
-                    <h3>Plátanos Cavendish</h3>
-                    <p>Ricos en potasio, perfectos para el desayuno.</p>
-                    <p class="precio">$800 / kg</p>
-                    <button class="btn-3 agregar-carrito" data-id="FR003">Añadir al carrito</button>
-                </div>
-            
-                <div class="producto-card">
-                    <img src="img/zanahoria.jpg" alt="Zanahorias Orgánicas de O'Higgins">
-                    <h3>Zanahorias Orgánicas</h3>
-                    <p>Fuente de vitamina A, cultivadas sin pesticidas.</p>
-                    <p class="precio">$900 / kg</p>
-                    <button class="btn-3 agregar-carrito" data-id="VR001">Añadir al carrito</button>
-                </div>
-            
-                <div class="producto-card">
-                    <img src="img/miel-1.jpg" alt="Miel Orgánica de apicultores locales">
-                    <h3>Miel Orgánica</h3>
-                    <p>Pura y natural, rica en antioxidantes.</p>
-                    <p class="precio">$5.000 / 500g</p>
-                    <button class="btn-3 agregar-carrito" data-id="PO001">Añadir al carrito</button>
-                </div>
-
                 <div class="filtro-categorias">
                     <button data-categoria="frutas">Frutas</button>
                     <button data-categoria="verduras">Verduras</button>
@@ -66,11 +33,42 @@
                     <button data-categoria="lacteos">Lácteos</button>
                     <input type="text" id="busqueda" placeholder="Buscar producto...">
                 </div>
+            <div class="productos-grid frutas">
+                <div class="producto-card">
+                    <img src="img/manzana.jpg" alt="Manzanas Fuji">
+                    <h3>Mazanzana Fuji</h3>
+                    <p>Crujientes y dulces, cultivadas en el Valle del Maule.</p>
+                    <p class="precio">$1.200 / kg</p>
+                    <button class="btn-3 agregar-carrito" data-id="FR001">Añadir al carrito</button>
+                </div>
+                <div class="producto-card frutas">
+                    <img src="img/platano.jpg" alt="Plátanos Cavendish maduros">
+                    <h3>Plátanos Cavendish</h3>
+                    <p>Ricos en potasio, perfectos para el desayuno.</p>
+                    <p class="precio">$800 / kg</p>
+                    <button class="btn-3 agregar-carrito" data-id="FR003">Añadir al carrito</button>
+                </div>
+            
+                <div class="producto-card verduras">
+                    <img src="img/zanahoria.jpg" alt="Zanahorias Orgánicas de O'Higgins">
+                    <h3>Zanahorias Orgánicas</h3>
+                    <p>Fuente de vitamina A, cultivadas sin pesticidas.</p>
+                    <p class="precio">$900 / kg</p>
+                    <button class="btn-3 agregar-carrito" data-id="VR001">Añadir al carrito</button>
+                </div>
+            
+                <div class="producto-card organicos">
+                    <img src="img/miel-1.jpg" alt="Miel Orgánica de apicultores locales">
+                    <h3>Miel Orgánica</h3>
+                    <p>Pura y natural, rica en antioxidantes.</p>
+                    <p class="precio">$5.000 / 500g</p>
+                    <button class="btn-3 agregar-carrito" data-id="PO001">Añadir al carrito</button>
+                </div>
             </div>
     </section>
     <section>
         <div class="submenu">
-            <button id="ver-carrito">🛒 Ver Carrito</button>
+            <button id="ver-carrito">Ver Carrito</button>
             <div id="carrito" class="carrito-visual">
                 <table>
                     <thead>
@@ -88,5 +86,6 @@
     </section>
     </main>
     <footer></footer>
+    <script type="module" src="js/producto.js"></script>
 </body>
 </html>

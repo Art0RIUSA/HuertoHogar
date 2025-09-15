@@ -3,102 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
         <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="header">
-            <div class="menu container">
-                    <a href="index.html"><img src="img/logo.png" width="90px" alt=""></a>
-                    <a href="#" class="logo">Huerto Hogar</a>
-                    <input type="checkbox" name="" id="menu">
-                    <label for="menu">
-                        <img src="img/logo.png" width="70px" class="menu-icono" alt="">
-                    </label>
-               
-                    <nav class="navbar">
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="producto.html">Productos</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                    <div>
-                        <ul>
-                            <li class="submenu">
-                                <img src="img/carro.png" width="40px" id="img-carrito" alt="carrito">
-                                <div id="carrito">
-                                    <table id="lista-carrito">
-                                        <thead>
-                                            <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-                                    <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <li class="login"><a href="#">Iniciar Sesion</a>
-                            <a href="">|</a>
-                            <a href="#">Registrarse</a>
-                        </li>
-                    </div>
-                    
-            </div>   
+    <header class="menuprincipal">
+    <div class="menu container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Huerto Hogar" width="80">
+      </a>     
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="producto.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a></li>
+        </ul>
+    </nav>
+    <div>
+        <ul>
+            <li class="submenu">
+                <img src="img/carro.png" width="40px" id="img-carrito" alt="carrito">
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="login container">
+    <h1>Acceso a Huerto Hogar</h1>
+    <p>Ingresa tus credenciales para acceder como cliente, empleado o administrador.</p>
 
-    </header>
-    <main>
-        <section class="login2">
-            <form action="" method="post" onsubmit="return validarTodo()">
-                <table border="1">
-                    <tr>
-                        <td>Login Usuario</td>
-                    </tr>
-                    <tr>
-                        <td>Correo:</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="email" name="txtEmail" id="txtEmail" required maxlength="100" placeholder="ingrese correo">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="password" name="txtPass" id="txtPass" required maxlength="10" minlength="4" placeholder="ingrese password" pattern="[0-9A-Za-z]{4}">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" value="Inicio sesion">
-                            <input type="reset" value="Limpiar">
-                            <input type="button" value="Validar" onclick="validarRut()">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Rut:</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" name="txtRut" id="txtRut">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </section>
-    </main>
+    <form class="formulario-login">
+        <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
 
-    <script  src="js/funciones.js">
+        <div class="campo">
+            <label for="clave">Contraseña</label>
+            <input type="password" id="clave" name="clave" required>
+        </div>
 
-    </script>
+        <div class="campo">
+            <label for="rol">Tipo de usuario</label>
+            <select id="rol" name="rol" required>
+            <option value="">Selecciona tu rol</option>
+            <option value="cliente">Cliente</option>
+            <option value="empleado">Empleado</option>
+            <option value="admin">Administrador</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn-hero">Ingresar</button>
+    </form>
+
+    <div class="login-extra">
+        <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+        <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+        </div>
+    </section>    
+    <script type="module">
+    import { iniciarSesion } from './js/login.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.querySelector('form');
+        if (!form) return;
+
+        form.addEventListener('submit', e => {
+        e.preventDefault();
+        const correo = document.getElementById('txtEmail').value.trim();
+        const clave = document.getElementById('txtPass').value.trim();
+        const rol = 'cliente'; // Puedes agregar un selector si quieres que el usuario elija
+
+        iniciarSesion(correo, clave, rol);
+        });
+    });
+</script>
+    <script type="module" src="js/login.js"></script>
 </body>
 </html>

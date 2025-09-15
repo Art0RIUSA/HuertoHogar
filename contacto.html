@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
     <section>
-         <header class="menuprincipal">
+        <header class="menuprincipal">
         <div class="menu container">
             <a href="index.html" class="logo">
             <img src="img/logo.png" alt="Huerto Hogar" width="80">
@@ -27,13 +26,43 @@
         </div>
         </header>
     </section>
-  </main>
+    <section class="contacto container">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes dudas, sugerencias o quieres saber más sobre nuestros productos? Escríbenos y te responderemos a la brevedad.</p>
+
+    <form class="formulario-contacto">
+        <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-hero">Enviar mensaje</button>
+    </form>
+
+    <div class="info-contacto">
+        <h3>También puedes encontrarnos en:</h3>
+        <p>Ñuñoa, Santiago, Chile</p>
+        <p>+56 9 1234 5678</p>
+        <p>contacto@huertohogar.cl</p>
+        </div>
+    </section>
+
+    </main>
 
 
-  <footer>
-    <p>&copy; 2025 Huerto Hogar | Todos los derechos reservados</p>
-  </footer>
- -->
-
+     <footer>
+        <p>&copy; 2025 Huerto Hogar | Todos los derechos reservados</p>
+    </footer>
+    <script type="module" src="js/contacto.js"></script>
 </body>
 </html>

@@ -6,7 +6,6 @@
     <title>Huerto Hogar</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<script src="js/funciones.js"></script>
 <body>
     <section>
         <header class="menuprincipal">
@@ -26,8 +25,14 @@
             </nav>
         </div>
         </header>
+        <section class="hero">
+            <div class="hero-content container">
+                <h1><span>Bienvenido</span> a Huerto Hogar</h1>
+                    <p>Productos frescos, orgánicos y locales directo a tu mesa.</p>
+                <a href="producto.html" class="btn-hero">Ver productos</a>
+            </div>
+        </section>
             </div class="submenu">
-            <button id="ver-carrito">Carrito</button>
             <div class="header-content container">
                 <div class="header-txt">
                     <h1> <span>Bienvenido</span> disfruta de nuestros productos</h1>
@@ -44,7 +49,6 @@
 
     <main class="products container">
         <h2>Productos</h2>
-
         <div class="box_container" id="lista-1">
             <div class="box">
                 <img src="img/manzana.jpg" width="40px" alt="###">
@@ -118,16 +122,10 @@
                     <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
                 </div>
             </div>
-            <div class="btn-2" id="load-more">
-                Cargar Mas
-            </div>
-
+            <div class="btn-2" id="load-more">Cargar Mas</div>
         </div>
-
-
     </main>
-    <script>
-
-</script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>
