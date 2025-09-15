@@ -127,4 +127,6 @@ function guardarCarrito(){
 
 function ir(){
     location.href='carrito.html'
-        }
+}
+
+
